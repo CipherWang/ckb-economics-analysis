@@ -40,14 +40,15 @@ def Inflation_Rate_Comparison():
     inflation_rate = inflation_rate * 100
     real_inflation = inflation_rate - APC
     # Nominal Inflation Rate 名义通胀率：当年总增发除以总发行
-    plt.plot(t_monthly, inflation_rate, "r-.", linewidth=0.5)
+    plt.plot(t_monthly, inflation_rate, "r-.", linewidth=0.8, label = 'Nominal Inflation Rate')
     # Baseline of APC 基准补偿率：二级增发除以总发行
-    plt.plot(t_monthly, APC, "b-.", linewidth=0.5)
+    plt.plot(t_monthly, APC, "g-.", linewidth=0.8, label = 'Baseline of APC (Compensation in NervosDAO)')
     # Real Inflation Rate 实际通胀率：一级增发除以总发行
-    plt.plot(t_monthly, real_inflation, "y")
+    plt.plot(t_monthly, real_inflation, "b", label = 'Real Inflation Rate')
     plt.ylim((0, 35))
     plt.xlim((0, cut_off_year))
     plt.xticks(np.arange(0, cut_off_year, 4))
+    plt.legend(loc='upper right')
     plt.show()
 
 # De Facto Hard Cap 
