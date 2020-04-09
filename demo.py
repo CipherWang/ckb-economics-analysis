@@ -22,7 +22,7 @@ def _getMonthSupply(t_monthly):
         total_supply_monthly.append(INITIAL_SUPPLY + np.sum(primary_issuance_monthly[:m]) + m*secondary_issuance_monthly)
     return (primary_issuance_monthly, secondary_issuance_monthly, np.array(total_supply_monthly))
 
-def Primary_Issue():
+def Primary_Issuance():
     # 1st issuance
     plt.bar(x, primary_issuance)
     plt.ylim((0, 10))
@@ -79,6 +79,6 @@ def deFacto_Hard_Cap():
     plt.show()
 
 if __name__ == "__main__":
-    Primary_Issue()
+    Primary_Issuance()
     Inflation_Rate_Comparison()
     deFacto_Hard_Cap()

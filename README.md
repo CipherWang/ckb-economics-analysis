@@ -1,6 +1,6 @@
 # ckb-economics-analysis
 
-## Primary Issue
+## Primary Issuance
 
 ![img](./img/Figure_1.png)
 
