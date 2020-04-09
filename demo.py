@@ -28,6 +28,8 @@ def Primary_Issue():
     plt.ylim((0, 10))
     plt.xlim(( - 0.5, cut_off_year - 0.5))
     plt.xticks(np.arange(0, cut_off_year, 4))
+    plt.xlabel('Time / year')
+    plt.ylabel("Supply / GB")
     plt.show()
 
 def Inflation_Rate_Comparison():
@@ -49,6 +51,8 @@ def Inflation_Rate_Comparison():
     plt.xlim((0, cut_off_year))
     plt.xticks(np.arange(0, cut_off_year, 4))
     plt.legend(loc='upper right')
+    plt.xlabel('Time / year')
+    plt.ylabel("Interest / %")
     plt.show()
 
 # De Facto Hard Cap 
@@ -70,6 +74,8 @@ def deFacto_Hard_Cap():
     plt.ylim((32, 100))
     plt.xlim((0, cut_off_year))
     plt.xticks(np.arange(0, cut_off_year, 4))
+    plt.xlabel('Time / year')
+    plt.ylabel("de Facto Supply / GB")
     plt.show()
 
 if __name__ == "__main__":
