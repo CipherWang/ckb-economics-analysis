@@ -11,3 +11,7 @@
 ## de Facto Hard Cap
 
 ![img](./img/Figure_3.png)
+
+## Compared with Bitcoin Issuance Model
+
+![img](./img/Figure_4.png)
